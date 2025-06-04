@@ -11,7 +11,7 @@ clean:
 	rm -rf balls *.o
 
 balls: balls.o
-	$(CC) $(LDFLAGS) balls.o -o balls
+	$(CC) balls.o -o balls $(LDFLAGS)
 
 balls.o: balls.cpp
 	$(CC) $(CFLAGS) balls.cpp
